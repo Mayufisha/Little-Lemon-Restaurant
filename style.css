@@ -208,6 +208,7 @@ nav li a:hover{
     text-align: center;
     margin: 0; 
     font-size: 1em; 
+    width: 80%;
 }
 .form-row {
     display: flex;
