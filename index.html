@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="icon" href="https://github.com/Mayufisha/images/blob/main/Little-Lemon-logos/Asset%209@4x.png?raw=true" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://github.com/Mayufisha/images/blob/main/Little-Lemon-logos/Asset%2016@4x.png?raw=true" alt="Company Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="home-banner">
+            <div class="banner-content">
+                <h1>Savor the Heart of the Mediterranean</h1>
+                <p>Timeless Recipes, Contemporary Flavors</p>
+            </div>
+        </div>
+    
+            <div class="menu-container" id="menu">
+                <h2>Our Menu</h2>
+               <ul class="menu-tabs">
+                    <li><button onclick="showCard(1)" class="active">Italian</button></li>
+                    <li><button onclick="showCard(2)">Greece</button></li>
+                    <li><button onclick="showCard(3)">Turkish</button></li>
+                    <li><button onclick="showCard(4)">Modern</button></li>  
+               </ul> 
+               <div class="card" id="card-1">
+                    <div class="item-1">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Bruschetta%20with%20Tomato%20and%20Basil.jpg?raw=true" alt="Bruschetta with Tomato and Basil Image">
+                        <h3>Bruschetta with Tomato and Basil</h3> 
+                        <p>A classic Italian appetizer with fresh tomatoes, garlic, olive oil, and basil on toasted bread.</p>
+                    </div>
+                    <div class="item-2">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Linguine%20with%20Clams.jpg?raw=true" alt="Linguine with Clams Image">
+                        <h3>Linguine with Clams</h3>
+                        <p>A seafood pasta made with fresh clams, garlic, parsley, white wine, and a touch of lemon.</p>
+                    </div>
+                    <div class="item-3">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Risotto%20Milanese.jpg?raw=true" alt="Risotto Milanese Image">
+                        <h3>Risotto Milanese</h3>
+                        <p>Creamy risotto flavored with saffron, perfect as a main dish or a side.</p>
+                    </div>
+                    <div class="item-4">
+                        <img src="https://github.com/Mayufisha/images/raw/refs/heads/main/Images/Caprese%20Salad.webp" alt="Caprese Salad Image">
+                        <h3>Caprese Salad</h3>
+                        <p>Fresh mozzarella, ripe tomatoes, basil, and a drizzle of balsamic glaze.</p>
+                    </div>
+               </div>
+               <div class="card" id="card-2" style="display: none;">
+                    <div class="item-1">
+                        <img src="https://github.com/Mayufisha/images/raw/refs/heads/main/Images/Moussaka.webp" alt="Moussaka Image">
+                        <h3>Moussaka</h3> 
+                        <p>A layered dish with eggplant, ground meat (usually lamb), tomatoes, and béchamel sauce.</p>
+                    </div>
+                    <div class="item-2">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Souvlaki.jpg?raw=true" alt="Souvlaki Image">
+                        <h3>Souvlaki</h3>
+                        <p>Skewers of grilled marinated meat, typically served with pita, tzatziki sauce, and a side salad.</p>
+                    </div>
+                    <div class="item-3">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Spanakopita.jpeg?raw=true" alt="Spanakopita Image">
+                        <h3>Spanakopita</h3>
+                        <p>A savory spinach pie with layers of flaky phyllo dough and feta cheese.</p>
+                    </div>
+                    <div class="item-4">
+                        <img src="https://github.com/Mayufisha/images/raw/refs/heads/main/Images/Greek%20Salad.webp" alt="Greek Salad Image" >
+                        <h3>Greek Salad</h3>
+                        <p>A refreshing mix of cucumbers, tomatoes, onions, olives, and feta cheese, drizzled with olive oil and oregano.</p>
+                    </div>
+                </div>
+                <div class="card" id="card-3" style="display: none;">
+                    <div class="item-1">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Lamb%20Kofta.jpg?raw=true" alt="Lamb Kofta Image">
+                        <h3>Lamb Kofta</h3> 
+                        <p>Ground lamb mixed with spices, formed into skewers, and grilled. Served with yogurt sauce or pilaf.</p>
+                    </div>
+                    <div class="item-2">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/B%C3%B6rek.jpg?raw=true" alt="Börek Image">
+                        <h3>Börek</h3>
+                        <p>Flaky pastry filled with cheese, spinach, or minced meat, often served as an appetizer or snack.</p>
+                    </div>
+                    <div class="item-3">
+                        <img src="https://github.com/Mayufisha/images/raw/refs/heads/main/Images/Shakshuka.webp" alt="Shakshuka Image">
+                        <h3>Shakshuka</h3>
+                        <p>A dish of poached eggs in a rich tomato sauce with peppers, onions, and spices, great for brunch or any meal.</p>
+                    </div>
+                    <div class="item-4">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Baklava.jpg?raw=true" alt="Baklava Image">
+                        <h3>Baklava</h3>
+                        <p>A sweet dessert made of layers of phyllo dough, nuts, and honey syrup.</p>
+                    </div>
+                </div>
+                <div class="card" id="card-4" style="display: none;">
+                    <div class="item-1">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/lemon-gelato.jpg?raw=true" alt="Lemon Gelato Sundae with Pistachios Image">
+                        <h3>Lemon Gelato Sundae with Pistachios</h3> 
+                        <p>A refreshing dessert featuring creamy lemon gelato topped with roasted pistachios, drizzled with honey, combining Italian and Greek flavors.</p>
+                    </div>
+                    <div class="item-2">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Falafel%20Sliders.jpg?raw=true" alt="Falafel Sliders Image" >
+                        <h3>Falafel Sliders</h3>
+                        <p>Bite-sized falafel patties served on soft slider buns with a variety of Mediterranean dips like hummus, tzatziki, and a side of pickled vegetables.</p>
+                    </div>
+                    <div class="item-3">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/mediterranean_grain_bowl.jpeg?raw=true" alt="Mediterranean Grain Bowl Image">
+                        <h3>Mediterranean Grain Bowl</h3>
+                        <p>A healthy mix of bulgur, roasted vegetables, grilled chicken, and feta, dressed with a tangy lemon-oregano vinaigrette, offering a fresh, vibrant flavor.</p>
+                    </div>
+                    <div class="item-4">
+                        <img src="https://github.com/Mayufisha/images/blob/main/Images/Harissa-Spiced%20Chicken%20Wraps.jpg?raw=true" alt="Harissa-Spiced Chicken Wraps Image">
+                        <h3>Harissa-Spiced Chicken Wraps</h3>
+                        <p>Grilled chicken seasoned with smoky, spicy harissa, wrapped in soft flatbread and topped with cucumber, yogurt sauce, and fresh herbs, blending Turkish and modern influences.</p>
+                    </div>
+                </div>
+            </div>
+        
+            
+    <div class="booking-container" id="book">
+                <div class="header-container">
+                    <h1>BOOK A TABLE</h1>
+                </div>
+                <div class="booking">
+                    <div class="reserved">
+                        <img src="https://github.com/Mayufisha/images/raw/refs/heads/main/Images/reservation.webp" alt="reserved image">
+                    </div>
+                    <form action="#" method="post" class="booking-form">
+                        <h2 class="top">Make A Reservation</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="first name" required>
+                                <label for="name">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="last-name" name="last-name" placeholder="last name" required>
+                                <label for="last-name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+                                <label for="phone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                <input type="tel" id="email" name="email" placeholder="jhondoe@email.com" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                            <input type="number" id="guests" name="guests"  min="1" required>
+                            <label for="guests">Number of Guests</label>
+                        </div>
+                        </div>   
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select id="reservation-type" name="reservation-type" required>
+                                    <option value="">Please Select</option>
+                                    <option value="Dinner">Dinner</option>
+                                    <option value="Dinner">Lunch</option>
+                                    <option value="Birthday/Anniversary">Birthday/Anniversary</option>
+                                    <option value="Private">Private</option>
+                                    <option value="Holiday">Holiday</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="reservation-type">Reservation Type</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="date" name="date" required>
+                                <label for="date">Select Date</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="time" name="time" required>
+                                    <option value="">Select a time</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="10:30 AM">10:30 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="11:30 AM">11:30 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="12:30 PM">12:30 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="1:30 PM">1:30 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="2:30 PM">2:30 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="3:30 PM">3:30 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="4:30 PM">4:30 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="5:30 PM">5:30 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="6:30 PM">6:30 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="7:30 PM">7:30 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="8:30 PM">8:30 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                    <option value="9:30 PM">9:30 PM</option>
+                                    <option value="10:00 PM">10:00 PM</option>
+                                </select>
+                                <label for="date">Select Time</label>
+                            </div> 
+                        </div>
+                         <div class="btn-box">
+                          <button type="submit" class="submit-btn">Reserve Now</button>  
+                         </div>                      
+                        
+                    </form>
+                </div>
+                
+    </div>   
+   
+    <section id="about">
+        <div class="container">
+          <h2>About Little Lemon</h2>
+          <p>At <strong>Little Lemon</strong>, we bring together the rich flavors of the Mediterranean with a fresh, modern twist. Founded by brothers Mario and Adrian, who moved from Italy to pursue their dream, our restaurant blends traditional family recipes with creative new dishes inspired by Italian, Greek, and Turkish cuisine.</p>
+          
+          <p>Mario’s culinary skills, honed in Italy, and Adrian’s vision for expanding the menu make each dish unique, from classic bruschetta to bold, modern Mediterranean bowls. In our warm, rustic space, we invite you to relax, enjoy, and feel like part of the family.</p>
+          
+          <p>Come experience the heart of the Mediterranean, right here in Chicago!</p>
+        </div>
+    </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+          <p>We’d love to hear from you! Whether you're planning a special event, need a reservation, 
+            or have a question about our menu, feel free to get in touch with us.</p>
+        <div class="contact-container">
+          
+            <div class="left">
+                <p><strong>Location:</strong><br>
+                    Little Lemon<br>
+                    1234 Mediterranean Lane, Chicago, IL 60601
+                  </p>
+                  
+                  <p><strong>Phone:</strong><br>
+                    (555) 123-4567
+                  </p>
+                  
+                  <p><strong>Email:</strong><br>
+                    <a href="mailto:info@littlelemonrestaurant.com">info@littlelemonrestaurant.com</a>
+                  </p>
+            </div>
+    
+          <div class="right">
+            <p><strong>Hours of Operation:</strong><br>
+                Monday – Friday: 10:00 AM – 11:00 PM<br>
+                Saturday – Sunday: 10:00 AM – 11:00 PM
+              </p>
+              
+              <p><strong>Follow Us on Social Media:</strong><br>
+                Instagram: <a href="https://instagram.com/LittleLemonChi">@LittleLemonChi</a><br>
+                Facebook: <a href="https://facebook.com/LittleLemonChicago">Little Lemon Chicago</a>
+              </p>
+          </div>
+          
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="https://github.com/Mayufisha/images/blob/main/Little-Lemon-logos/Asset%2014@4x.png?raw=true" alt="Company logo">
+        </div>
+        <div class="copy-right">
+             <p>&copy Copyright. All rights reserved.
+                Designed and developed by Samuel Fisha Molla for the portfolio project of HTML and CSS in depth course in the Meta front-end developer professional certificate.</p>   
+        </div>
+    </footer>
+
+    <script>
+        function showCard(cardNumber) {
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.style.display = 'none';
+    });
+
+    document.getElementById(`card-${cardNumber}`).style.display = 'block';
+
+    const buttons = document.querySelectorAll('.menu-tabs button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    buttons[cardNumber - 1].classList.add('active');
+}
+
+document.getElementById('card-1').style.display = 'block';
+    </script>
+</body>
+</html>

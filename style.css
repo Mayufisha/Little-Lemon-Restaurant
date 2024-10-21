@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 1em 5% 0;
+    padding: 0;
+}
+
+header img{
+    display: block;
+    width: 15em;
+    height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+nav li{
+    display: inline-block;
+    padding: 1em;
+}  
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav li a:active{
+    background-color: #fff;
+    color: black;
+}
+
+nav li a:hover{
+    background-color: #fff;
+    color: black;
+    
+}
+
+.home-banner {
+    background-image: url(https://github.com/Mayufisha/images/raw/refs/heads/main/Images/Mezze%20platter.webp); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 80vh; 
+    width: 90vw; 
+    margin: 2em auto 4; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 1em; 
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    color: white;
+    z-index: 2; 
+    text-align: center; 
+    padding: 2em; 
+}
+
+.banner-content h1 {
+    font-size: 3.5em; 
+    margin: 0; 
+}
+
+.banner-content p {
+    font-size: 2.5em; 
+    margin-top: 0.5em; 
+}
+
+
+
+.menu-container {
+    background-color: #2c2c2c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 2em;
+    border-radius: 1em;
+    margin: 4em auto;
+    
+}
+
+.menu-container h2{
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+.menu-tabs {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.menu-tabs li {
+    display: inline;
+    margin: 0 1em;
+    text-align: center;
+}
+
+.menu-tabs button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.menu-tabs button.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #3e3e3e;
+    padding: 0 2em;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.item-1, .item-2, .item-3, .item-4{
+    grid-row: span 5 / span 5;
+    display: inline-block;
+    padding: 0 ;
+    margin: 0;
+    width: 24%;
+}
+.item-1{
+    padding: 1em 0;
+}
+
+.card img{
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.card h3 {
+    margin-top: 0;
+}
+
+.booking-container {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 1em; 
+    border-radius: 0.625em; 
+    box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1); 
+    max-width: 150em; 
+    margin: 0 auto 4em;
+    
+}
+
+
+.header-container {
+    background-color: #34373fe5; 
+    padding: 0.8em;
+    border-radius: 0.625em 0.625em 0 0; 
+    margin: -1em -1em 1em -1em;
+}
+
+.header-container h1 {
+    color: #fff; 
+    text-align: center;
+    margin: 0; 
+    font-size: 1.5em; 
+}
+.booking{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.reserved{
+    grid-column: span 2/ span 2;
+}
+.reserved img{
+    max-width: 90%;
+    
+    border-radius: 1em;
+    
+}
+.booking-form{
+    grid-column-start: 3;
+    max-width: 100%;
+   
+}
+.top{
+    background-color: #34373fe5; 
+    padding: 0.8em;
+    border-radius: 0.625em ; 
+    align-items: center;
+    margin-bottom: 1em;
+
+}
+.top h2 {
+    color: #fff; 
+    text-align: center;
+    margin: 0; 
+    font-size: 1em; 
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-row  {
+width:100%;
+}
+.form-group{
+    width: 88%;
+}
+
+.form-row input  {
+    width: 100%;
+    padding: 1em; 
+}
+.form-row select
+{
+    width:88%;
+    padding: 1em;
+}
+#reservation-type{
+    width :100%;
+padding:1em;
+}
+
+.form-row select{
+    border-radius: 0.4em;
+}
+label {
+    font-size: 1em; 
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+button.submit-btn {
+    margin-top: 1em;
+    padding: 0.8em; 
+    font-size: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    background-color: #83888d;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    align-items: center;
+}
+#name, #date, #last-name{
+    width: 75%;
+    margin: auto;
+}
+#time{
+    margin: auto;
+}
+
+input {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #343536;
+}
+
+.btn-box{
+    align-items: center;
+    width: 80%;
+}
+
+button.submit-btn:hover {
+    background-color: #4d5d6d;
+}
+
+@media (max-width: 50%) {
+    .booking-container {
+        padding: 1em;
+    }
+
+    input {
+        padding: 0.8em;
+    }
+
+    button.submit-btn {
+        padding: 0.5em;
+    }
+}
+
+/* About Section  */
+#about {
+    background-color: #2c2c2c;
+    padding: 2em; 
+    border-radius: 0.5em; 
+    box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2.5em; 
+    top: 10em;
+  }
+  
+  #about h2 {
+    text-align: center;
+    font-size: 2em; 
+    color: #4CAF50; 
+    margin-bottom: 1.25em; 
+  }
+  
+  #about p {
+    margin-bottom: 1.25em; 
+    font-size: 1.1em; 
+    color: #fff;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    background-color: #2c2c2c;
+    padding: 2em; 
+    border-radius: 0.5em; 
+    box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.1); 
+}
+  .contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left{
+    grid-column: span;
+  }
+  .right{
+    grid-column: auto;
+  }
+  #contact h2 {
+    text-align: center;
+    font-size: 2.5em; 
+    color: #4CAF50; 
+    margin-bottom: 1.25em;
+  }
+  
+  #contact p {
+    margin-bottom: 0.625em;
+    color: #fff;
+    font-size: 1.1em; 
+  }
+  
+  /* Links in Contact Section */
+  #contact a {
+    color: #4CAF50; 
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2em 0 0;
+    bottom: 0;
+}
+.footer-logo{
+    grid-column: 1/2;
+    flex: 1;
+
+}
+.copy-right{
+    grid-column: auto;
+    flex: 2;
+}
+.footer-logo img{
+    width: 10em;
+    height:3em;
+}
